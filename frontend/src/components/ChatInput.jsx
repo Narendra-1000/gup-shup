@@ -4,6 +4,7 @@ import { IoMdSend } from "react-icons/io";
 import styled from "styled-components";
 import Picker from "emoji-picker-react";
 
+
 export default function ChatInput({ handleSendMsg }) {
   const [msg, setMsg] = useState("");
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
@@ -31,9 +32,7 @@ export default function ChatInput({ handleSendMsg }) {
         <div className="emoji">
           <BsEmojiSmileFill onClick={handleEmojiPickerhideShow} />
           {showEmojiPicker && <Picker onEmojiClick={handleEmojiClick} />}
-        </div>
-        <div className="link">
-          
+
         </div>
       </div>
       <form className="input-container" onSubmit={(event) => sendChat(event)}>
@@ -46,8 +45,11 @@ export default function ChatInput({ handleSendMsg }) {
         <button type="submit">
           <IoMdSend />
         </button>
+
       </form>
+
     </Container>
+
   );
 }
 

@@ -24,6 +24,11 @@ export default function Contacts({ contacts, changeChat }) {
           <div className="brand">
             <img src={Logo} alt="logo" />
             <h3>gup-shup</h3>
+            <div>
+              <a href="https://excel-25.netlify.app/">
+                <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png" alt="message"></img></button>
+              </a>
+            </div>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {

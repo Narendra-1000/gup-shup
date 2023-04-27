@@ -20,6 +20,7 @@ export default function Logout() {
     <Button onClick={handleClick}>
       <BiPowerOff />
     </Button>
+
   );
 }
 
