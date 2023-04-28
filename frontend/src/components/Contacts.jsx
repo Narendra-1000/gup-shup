@@ -29,6 +29,11 @@ export default function Contacts({ contacts, changeChat }) {
                 <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png" alt="message"></img></button>
               </a>
             </div>
+            <div>
+              <a href="https://upload-notes.netlify.app/">
+                <button><img src="https://www.iconarchive.com/download/i18743/iconshock/real-vista-project-managment/task-notes.ico" alt="message"></img></button>
+              </a>
+            </div>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
